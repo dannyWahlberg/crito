@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap");
+html, body {
+  color: #191919;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+header {
+  background-color: #F0EFE9;
+  padding: 16px;
+}
+header .container {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .menu-bars {
+  border: none;
+  font-size: 25px;
+  background-color: transparent;
+}
+@media (min-width: 992px) {
+  header .container .menu-bars {
+    display: none;
+  }
+}
+header .container .menu {
+  display: none;
+  flex: 1;
+}
+@media (min-width: 992px) {
+  header .container .menu {
+    display: block;
+  }
+}
+header .container .menu .top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #DAD9D3;
+}
+header .container .menu .top-menu .contact-information {
+  display: flex;
+  gap: 40px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+header .container .menu .top-menu .contact-information .icon-border {
+  padding-left: 10px;
+  border-left: 1px solid #DAD9D3;
+}
+header .container .menu .top-menu .contact-information i {
+  font-size: 1.2em;
+}
+header .container .menu .top-menu .social-media-images i {
+  font-size: 1.3rem;
+  margin-left: 15px;
+  text-decoration: none;
+  color: #191919;
+  transition: color 0.3s ease;
+}
+header .container .menu .top-menu .social-media-images i:hover {
+  color: #F9D783;
+}
+header .container .header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+header .container .header-bottom .bottom-menu {
+  display: flex;
+  gap: 35px;
+}
+header .container .header-bottom .login-btn {
+  background-color: #F9D783;
+  border-radius: 25px;
+  border: none;
+  padding: 10px;
+}
