@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800;900&display=swap");
 html, body {
   color: #191919;
   font-family: "Inter", sans-serif;
@@ -26,59 +26,88 @@ header .container .menu-bars {
     display: none;
   }
 }
-header .container ss .menu {
+header .container .menu {
   display: none;
   flex: 1;
 }
 @media (min-width: 992px) {
-  header .container ss .menu {
+  header .container .menu {
     display: block;
   }
 }
-header .container ss .menu .top-menu {
+header .container .menu .top-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 10px;
   border-bottom: 1px solid #DAD9D3;
 }
-header .container ss .menu .top-menu .contact-information {
+header .container .menu .top-menu .contact-information {
   display: flex;
   gap: 40px;
   font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 300;
 }
-header .container ss .menu .top-menu .contact-information .icon-border {
+header .container .menu .top-menu .contact-information .icon-border {
   padding-left: 10px;
   border-left: 1px solid #DAD9D3;
 }
-header .container ss .menu .top-menu .contact-information i {
+header .container .menu .top-menu .contact-information i {
   font-size: 1.2em;
 }
-header .container ss .menu .top-menu .social-media-images i {
+header .container .menu .top-menu .social-media-images i {
   font-size: 1.3rem;
   margin-left: 15px;
   text-decoration: none;
   color: #191919;
   transition: color 0.3s ease;
 }
-header .container ss .menu .top-menu .social-media-images i:hover {
+header .container .menu .top-menu .social-media-images i:hover {
   color: #F9D783;
 }
 header .container .header-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+  padding-top: 10px;
 }
 header .container .header-bottom .bottom-menu {
   display: flex;
-  gap: 35px;
 }
-header .container .header-bottom .login-btn {
+header .container .header-bottom .bottom-menu a {
+  display: inline-block;
+  text-decoration: none;
+  color: #191919;
+  margin-right: 35px;
+  position: relative;
+}
+header .container .header-bottom .bottom-menu a.active {
+  font-weight: 500;
+}
+header .container .header-bottom .bottom-menu a.active::after, header .container .header-bottom .bottom-menu a:hover::after {
+  content: "";
+  position: absolute;
+  font-weight: 500;
+  height: 2px;
+  width: 15px;
+  background-color: #191919;
+  left: 50%;
+  bottom: -3px;
+  transform: translate(calc(50% - 15px));
+}
+header .container .header-bottom .standard-btn {
   background-color: #F9D783;
   border-radius: 25px;
   border: none;
-  padding: 10px;
+  text-decoration: none;
+  padding: 15px 30px 10px 30px;
+  color: #191919;
+  display: inline-block;
+}
+header .container .header-bottom .standard-btn i {
+  margin-left: 10px;
+  vertical-align: middle;
+  position: relative;
+  top: -5px;
 }
