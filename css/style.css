@@ -37,17 +37,27 @@ header .container .menu {
 }
 header .container .menu .top-menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
   padding-bottom: 10px;
   border-bottom: 1px solid #DAD9D3;
 }
+@media (min-width: 1200px) {
+  header .container .menu .top-menu {
+    justify-content: space-between;
+  }
+}
 header .container .menu .top-menu .contact-information {
-  display: flex;
+  display: none;
   gap: 40px;
   font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 300;
+}
+@media (min-width: 1200px) {
+  header .container .menu .top-menu .contact-information {
+    display: flex;
+  }
 }
 header .container .menu .top-menu .contact-information .icon-border {
   padding-left: 10px;
@@ -99,15 +109,23 @@ header .container .header-bottom .bottom-menu a.active::after, header .container
 header .container .header-bottom .standard-btn {
   background-color: #F9D783;
   border-radius: 25px;
-  border: none;
+  border: 1px solid #F9D783;
   text-decoration: none;
-  padding: 15px 30px 10px 30px;
+  padding: 10px 25px 10px 25px;
   color: #191919;
   display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background-color 0.5s ease;
 }
 header .container .header-bottom .standard-btn i {
   margin-left: 10px;
   vertical-align: middle;
   position: relative;
   top: -5px;
+  font-size: 0.8em;
+}
+header .container .header-bottom .standard-btn:hover {
+  background-color: #191919;
+  color: rgb(236, 235, 235);
 }
