@@ -1,9 +1,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap");
 html, body {
   color: #191919;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
+}
+
+.btn-yellow {
+  background-color: #F9D783;
+  border-radius: 25px;
+  border: 1px solid #F9D783;
+  text-decoration: none;
+  padding: 15px 25px;
+  color: #191919;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background-color 0.5s ease;
+}
+.btn-yellow i {
+  margin-left: 10px;
+  vertical-align: middle;
+  position: relative;
+  top: -5px;
+  font-size: 0.8em;
+}
+.btn-yellow:hover {
+  background-color: #191919;
+  color: rgb(236, 235, 235);
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border-radius: 25px;
+  border: 1px solid #191919;
+  text-decoration: none;
+  padding: 15px 25px;
+  color: #191919;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background-color 0.5s ease;
+}
+.btn-transparent i {
+  margin-left: 10px;
+  vertical-align: middle;
+  position: relative;
+  top: -5px;
+  font-size: 0.8em;
+}
+.btn-transparent:hover {
+  background-color: #191919;
+  color: rgb(236, 235, 235);
 }
 
 header {
@@ -106,26 +155,34 @@ header .container .header-bottom .bottom-menu a.active::after, header .container
   bottom: -3px;
   transform: translate(calc(50% - 15px));
 }
-header .container .header-bottom .standard-btn {
-  background-color: #F9D783;
-  border-radius: 25px;
-  border: 1px solid #F9D783;
-  text-decoration: none;
-  padding: 10px 25px 10px 25px;
-  color: #191919;
-  display: inline-block;
-  font-weight: 600;
-  font-size: 16px;
-  transition: background-color 0.5s ease;
+header .container .header-bottom .login-btn {
+  padding-top: 12px;
+  padding-bottom: 15px;
 }
-header .container .header-bottom .standard-btn i {
-  margin-left: 10px;
-  vertical-align: middle;
-  position: relative;
-  top: -5px;
-  font-size: 0.8em;
+
+.showcase {
+  background-color: #F0EFE9;
 }
-header .container .header-bottom .standard-btn:hover {
-  background-color: #191919;
-  color: rgb(236, 235, 235);
+.showcase .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.showcase .container .content h1 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 86px;
+  font-weight: 700;
+}
+.showcase .container .content p {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 40px 0px 40px 0px;
+}
+.showcase .container .content a {
+  margin-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.showcase img {
+  margin-right: -50px;
 }
