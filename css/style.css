@@ -5,6 +5,14 @@ html, body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.5;
+}
+
+.wrapper-grid {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
 }
 
 .btn-yellow {
@@ -28,7 +36,8 @@ html, body {
 }
 .btn-yellow:hover {
   background-color: #191919;
-  color: rgb(236, 235, 235);
+  color: rgb(241, 237, 237);
+  border: 1px solid #191919;
 }
 
 .btn-transparent {
@@ -60,91 +69,101 @@ header {
   padding: 16px;
 }
 header .container {
-  display: flex;
-  gap: 70px;
+  display: grid;
   align-items: center;
-  justify-content: space-between;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: "logo bars";
 }
-header .container .menu-bars {
+@media (min-width: 992px) {
+  header .container {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo cib social" "logo menu menu";
+  }
+}
+header .container .btn-menubars {
+  grid-area: bars;
   border: none;
   font-size: 25px;
   background-color: transparent;
 }
 @media (min-width: 992px) {
-  header .container .menu-bars {
+  header .container .btn-menubars {
     display: none;
   }
 }
-header .container .menu {
+header .container .logotype {
+  grid-area: logo;
+  margin-right: 70px;
+}
+header .container .contactinformation-bar {
+  grid-area: cib;
   display: none;
-  flex: 1;
-}
-@media (min-width: 992px) {
-  header .container .menu {
-    display: block;
-  }
-}
-header .container .menu .top-menu {
-  display: flex;
-  justify-content: end;
+  justify-content: flex-start;
   align-items: center;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #DAD9D3;
 }
 @media (min-width: 1200px) {
-  header .container .menu .top-menu {
-    justify-content: space-between;
+  header .container .contactinformation-bar {
+    display: flex;
   }
 }
-header .container .menu .top-menu .contact-information {
-  display: none;
-  gap: 40px;
+header .container .contactinformation-bar .content-box {
+  padding-right: 30px;
+  margin-right: 30px;
+  border-right: 1px solid #DAD9D3;
   font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 300;
 }
-@media (min-width: 1200px) {
-  header .container .menu .top-menu .contact-information {
+header .container .contactinformation-bar .content-box i {
+  margin-right: 5px;
+  font-size: 1.2em;
+}
+header .container .contactinformation-bar .content-box.last {
+  border: none;
+}
+header .container .socialmedia-bar {
+  grid-area: social;
+  display: none;
+}
+@media (min-width: 992px) {
+  header .container .socialmedia-bar {
+    display: block;
+  }
+}
+header .container .socialmedia-bar a {
+  color: #191919;
+  font-size: 1.3rem;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+header .container .socialmedia-bar a:hover {
+  color: #7c7c7c;
+}
+header .container .menu {
+  grid-area: menu;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #dad9d3;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+@media (min-width: 992px) {
+  header .container .menu {
     display: flex;
   }
 }
-header .container .menu .top-menu .contact-information .icon-border {
-  padding-left: 10px;
-  border-left: 1px solid #DAD9D3;
-}
-header .container .menu .top-menu .contact-information i {
-  font-size: 1.2em;
-}
-header .container .menu .top-menu .social-media-images i {
-  font-size: 1.3rem;
-  margin-left: 15px;
-  text-decoration: none;
-  color: #191919;
-  transition: color 0.3s ease;
-}
-header .container .menu .top-menu .social-media-images i:hover {
-  color: #F9D783;
-}
-header .container .header-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 10px;
-}
-header .container .header-bottom .bottom-menu {
-  display: flex;
-}
-header .container .header-bottom .bottom-menu a {
+header .container .menu nav a {
   display: inline-block;
   text-decoration: none;
   color: #191919;
   margin-right: 35px;
   position: relative;
 }
-header .container .header-bottom .bottom-menu a.active {
+header .container .menu nav a.active {
   font-weight: 500;
 }
-header .container .header-bottom .bottom-menu a.active::after, header .container .header-bottom .bottom-menu a:hover::after {
+header .container .menu nav a.active::after, header .container .menu nav a:hover::after {
   content: "";
   position: absolute;
   font-weight: 500;
@@ -155,9 +174,9 @@ header .container .header-bottom .bottom-menu a.active::after, header .container
   bottom: -3px;
   transform: translate(calc(50% - 15px));
 }
-header .container .header-bottom .login-btn {
+header .container .menu .login-btn {
   padding-top: 12px;
-  padding-bottom: 15px;
+  padding-bottom: 12px;
 }
 
 .showcase {
