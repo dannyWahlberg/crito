@@ -64,6 +64,21 @@ html, body {
   color: rgb(236, 235, 235);
 }
 
+.section-title {
+  padding-top: 120px;
+  padding-bottom: 90px;
+}
+.section-title p {
+  color: #F94D1C;
+  margin-bottom: 10px;
+}
+.section-title h2 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+}
+
 header {
   background-color: #F0EFE9;
   padding: 16px;
@@ -247,4 +262,8 @@ header .container .menu .login-btn {
   .showcase .container img {
     display: block;
   }
+}
+
+.project-and-case .container .section-title {
+  text-align: center;
 }
