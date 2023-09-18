@@ -298,18 +298,31 @@ header .container .menu .login-btn {
   }
 }
 
+.partners {
+  padding-top: 50px;
+}
+@media (min-width: 768px) {
+  .partners {
+    padding-top: 70px;
+  }
+}
 .partners .container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto, auto;
+  padding-left: 70px;
+  grid-template-columns: repeat(auto-fit, minmax 20px, 1fr);
+}
+@media (min-width: 768px) {
+  .partners .container {
+    padding: 0;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media (min-width: 1200px) {
   .partners .container {
-    margin: 0;
+    padding: 0;
     grid-template-columns: repeat(5, 1fr);
   }
 }
-
 .project-and-case .container .section-title {
   text-align: center;
 }
@@ -369,4 +382,32 @@ header .container .menu .login-btn {
     margin-top: 50px;
     margin-bottom: 90px;
   }
+}
+
+.features {
+  margin-top: 90px;
+  padding: 120px;
+}
+.features .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+.features .container .section-title {
+  grid-row: 1/3;
+  padding: 0;
+  margin-right: 100px;
+}
+.features .container .section-title .btn-yellow {
+  margin-top: 20px;
+  padding: 10px 110px;
+}
+.features .container .our-products {
+  margin-right: 150px;
+}
+.features .container .our-products img {
+  margin-bottom: 20px;
+}
+.features .container .our-products p {
+  margin-top: 20px;
 }
