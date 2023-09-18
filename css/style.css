@@ -17,22 +17,21 @@ html, body {
 
 .btn-yellow {
   background-color: #F9D783;
-  border-radius: 25px;
   border: 1px solid #F9D783;
+  color: #191919;
   text-decoration: none;
   padding: 15px 25px;
-  color: #191919;
-  display: inline-block;
+  border-radius: 25px;
   font-weight: 600;
   font-size: 16px;
   transition: background-color 0.5s ease;
 }
 .btn-yellow i {
-  margin-left: 10px;
+  margin-left: 8px;
+  font-size: 0.8em;
   vertical-align: middle;
   position: relative;
   top: -5px;
-  font-size: 0.8em;
 }
 .btn-yellow:hover {
   background-color: #191919;
@@ -40,20 +39,43 @@ html, body {
   border: 1px solid #191919;
 }
 
+.btn-black {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background-color 0.5s ease;
+}
+.btn-black i {
+  margin-left: 8px;
+  font-size: 0.9em;
+  vertical-align: middle;
+  position: relative;
+  top: -5px;
+}
+.btn-black:hover {
+  background-color: #FFFFFF;
+  color: #191919;
+  border: 1px solid #191919;
+}
+
 .btn-transparent {
   background-color: transparent;
-  border-radius: 25px;
   border: 1px solid #191919;
+  color: #191919;
   text-decoration: none;
   padding: 15px 25px;
-  color: #191919;
-  display: inline-block;
+  border-radius: 25px;
   font-weight: 600;
   font-size: 16px;
   transition: background-color 0.5s ease;
 }
 .btn-transparent i {
-  margin-left: 10px;
+  margin-left: 8px;
   vertical-align: middle;
   position: relative;
   top: -5px;
@@ -65,8 +87,14 @@ html, body {
 }
 
 .section-title {
-  padding-top: 120px;
-  padding-bottom: 90px;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+@media (min-width: 768ox) {
+  .section-title {
+    padding-top: 120px;
+    padding-bottom: 90px;
+  }
 }
 .section-title p {
   color: #F94D1C;
@@ -77,6 +105,12 @@ html, body {
   font-family: "DM Sans", sans-serif;
   font-size: 45px;
   font-weight: 700;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
@@ -266,4 +300,61 @@ header .container .menu .login-btn {
 
 .project-and-case .container .section-title {
   text-align: center;
+}
+.project-and-case .container .project-and-cases {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .project-and-case .container .project-and-cases {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.project-and-case .container .project-and-cases .project {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  text-decoration: none;
+  color: #191919;
+}
+.project-and-case .container .project-and-cases .project img {
+  width: 100%;
+  height: auto;
+}
+.project-and-case .container .project-and-cases .project h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  padding-top: 35px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #DAD9D3;
+}
+.project-and-case .container .project-and-cases .project .readmore {
+  padding: 15;
+  display: block;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.project-and-case .container .project-and-cases .project .readmore i {
+  margin-left: 3px;
+  vertical-align: middle;
+  position: relative;
+  top: -5px;
+}
+.project-and-case .container .project-and-cases .project:hover .readmore {
+  text-decoration: underline;
+}
+.project-and-case .container .projects-btn a {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .project-and-case .container .projects-btn a {
+    margin-top: 50px;
+    margin-bottom: 90px;
+  }
 }
