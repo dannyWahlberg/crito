@@ -479,29 +479,49 @@ header {
 .features {
 
     margin-top: 90px;
-    padding: 120px;
+    margin-left: 50px;
+
+    @media (min-width: 768px) {
+        padding: 120px;
+    }
+
 
 
 
     .container {
-
+        
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto;
         
         .section-title {
+
+            @media (max-width: 576px) {
+                // margin-left: 50px;
+
+            }
+            display: grid;
             grid-row: 1 / 3;
             padding: 0;
             margin-right: 100px;
-
+            
+            h2 {
+                font-size: 45px;
+            }
 
             .btn-yellow {
-                margin-top: 20px;
-                padding: 10px 110px;
+                
+                @media (min-width: 768px) {
+
+
+                }
+
             }
          }
 
         .our-products {
+
+            display: none;
 
            margin-right: 150px;
 
@@ -511,9 +531,14 @@ header {
             }
 
             p {
-                
+
                 margin-top: 20px;
             }
+
+            @media (min-width: 768px) {
+                display:block;
+            }
+            
         }
     }
 }

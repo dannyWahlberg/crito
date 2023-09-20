@@ -386,7 +386,12 @@ header .container .menu .login-btn {
 
 .features {
   margin-top: 90px;
-  padding: 120px;
+  margin-left: 50px;
+}
+@media (min-width: 768px) {
+  .features {
+    padding: 120px;
+  }
 }
 .features .container {
   display: grid;
@@ -394,15 +399,16 @@ header .container .menu .login-btn {
   grid-template-rows: auto auto;
 }
 .features .container .section-title {
+  display: grid;
   grid-row: 1/3;
   padding: 0;
   margin-right: 100px;
 }
-.features .container .section-title .btn-yellow {
-  margin-top: 20px;
-  padding: 10px 110px;
+.features .container .section-title h2 {
+  font-size: 45px;
 }
 .features .container .our-products {
+  display: none;
   margin-right: 150px;
 }
 .features .container .our-products img {
@@ -410,4 +416,9 @@ header .container .menu .login-btn {
 }
 .features .container .our-products p {
   margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .features .container .our-products {
+    display: block;
+  }
 }
