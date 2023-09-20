@@ -360,42 +360,34 @@ header {
 
 .partners {
 
-
-    padding-top: 50px;
+    // display: flex;
+    // justify-content: center;
+    // gap: 10px;
+    // padding-top: 70px;
+    // padding-left: 70px;
+    // flex-wrap: wrap;
+    
     
 
-    @media (min-width: 768px) {
-        
-        padding-top: 70px;
 
-    }
-       
     .container {
-        
-        display: grid;
-        padding-left: 70px;
-        grid-template-columns: repeat(auto-fit, minmax (20px, 1fr));
-        
-       
-        
-        
-        
-        @media (min-width: 768px) {
-            padding: 0;
-            grid-template-columns: repeat(3, 1fr);
-            
-        }
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 70px;
+    
+    flex-wrap: wrap;
 
-        @media (min-width: 1200px) {
-            padding: 0;
-            grid-template-columns: repeat(5, 1fr);
-        }
-
-        img {
-            
-        }
+    @media (min-width: 1200px) {
+        padding-bottom: 70px;
+        flex-wrap: nowrap;
     }
-}
+    
+
+    }
+
+  
+} 
 
 .project-and-case {
     .container {
@@ -477,28 +469,26 @@ header {
 }
 
 .features {
-
-    margin-top: 90px;
-    margin-left: 50px;
-
-  
-    @media (min-width: 768px) {
-        margin-right: 50px;
-    }
-
+    display:flex;
+    margin-left: 40px;
+    justify-content: center;
     
-
+    @media (min-width: 1200px) {
+        margin-right: 50px;
+        padding: 70px;
+        width: 85%;
+        margin: auto;
+        border: 1px solid #D1D1D1;gap: 90px;
+    }
+    
     .container {
-        
+        margin-top: 90px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto;
-
-  
         
         .section-title {
-
-          
+            
             display: grid;
             grid-row: 1 / 3;
             padding: 0;
@@ -508,21 +498,14 @@ header {
                 font-size: 45px;
             }
 
-            .btn-yellow {
-                
-                @media (min-width: 768px) {
 
-
-                }
-
-            }
          }
 
         .our-products {
 
             display: none;
 
-           margin-right: 150px;
+        //    margin-right: 150px;
 
             img {
 
@@ -540,4 +523,7 @@ header {
             
         }
     }
+    
+
+    
 }

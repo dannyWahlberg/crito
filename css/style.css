@@ -298,31 +298,20 @@ header .container .menu .login-btn {
   }
 }
 
-.partners {
-  padding-top: 50px;
-}
-@media (min-width: 768px) {
-  .partners {
-    padding-top: 70px;
-  }
-}
 .partners .container {
-  display: grid;
-  padding-left: 70px;
-  grid-template-columns: repeat(auto-fit, minmax 20px, 1fr);
-}
-@media (min-width: 768px) {
-  .partners .container {
-    padding: 0;
-    grid-template-columns: repeat(3, 1fr);
-  }
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 70px;
+  flex-wrap: wrap;
 }
 @media (min-width: 1200px) {
   .partners .container {
-    padding: 0;
-    grid-template-columns: repeat(5, 1fr);
+    padding-bottom: 70px;
+    flex-wrap: nowrap;
   }
 }
+
 .project-and-case .container .section-title {
   text-align: center;
 }
@@ -385,15 +374,22 @@ header .container .menu .login-btn {
 }
 
 .features {
-  margin-top: 90px;
-  margin-left: 50px;
+  display: flex;
+  margin-left: 40px;
+  justify-content: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .features {
     margin-right: 50px;
+    padding: 70px;
+    width: 85%;
+    margin: auto;
+    border: 1px solid #D1D1D1;
+    gap: 90px;
   }
 }
 .features .container {
+  margin-top: 90px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto;
@@ -409,7 +405,6 @@ header .container .menu .login-btn {
 }
 .features .container .our-products {
   display: none;
-  margin-right: 150px;
 }
 .features .container .our-products img {
   margin-bottom: 20px;
