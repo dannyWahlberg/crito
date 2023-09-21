@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap");
-html, body {
+html,
+body {
   color: #191919;
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -312,6 +313,126 @@ header .container .menu .login-btn {
   }
 }
 
+.features {
+  display: flex;
+  margin-left: 40px;
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  .features {
+    margin-right: 50px;
+    padding: 70px;
+    width: 85%;
+    margin: auto;
+    border: 1px solid #D1D1D1;
+    gap: 90px;
+  }
+}
+.features .container {
+  margin-top: 90px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+.features .container .section-title {
+  display: grid;
+  grid-row: 1/3;
+  padding: 0;
+  margin-right: 100px;
+}
+.features .container .section-title h2 {
+  font-size: 45px;
+}
+.features .container .our-products {
+  display: none;
+}
+.features .container .our-products img {
+  margin-bottom: 20px;
+}
+.features .container .our-products p {
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .features .container .our-products {
+    display: block;
+  }
+}
+
+.about-company .content {
+  display: flex;
+  padding-top: 120px;
+  justify-content: space-between;
+  gap: 100px;
+}
+.about-company .content .about-image {
+  position: relative;
+}
+.about-company .content .about-image .blue-box {
+  position: absolute;
+  left: -50px;
+  top: 400px;
+  height: 180px;
+  width: 360px;
+  background-color: #BEEBFF;
+}
+.about-company .content .about-image .blue-box .blue-box-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.about-company .content .about-image .blue-box .blue-box-content .name-title {
+  display: flex;
+}
+.about-company .content .about-image .blue-box .blue-box-content .name-title .name {
+  display: flex;
+  align-items: center;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+.about-company .content .about-image .blue-box .blue-box-content .name-title .title {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+  color: #F94D1C;
+  padding-left: 5px;
+  font-weight: 700;
+  margin-top: 3px;
+}
+.about-company .content .about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.about-company .content .about-info .section-title {
+  padding: 0;
+}
+.about-company .content .about-info .content-text p {
+  margin-top: 50px;
+}
+.about-company .content .about-info .about-buttons {
+  margin-top: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.about-company .content .about-info .about-buttons .btn-black {
+  margin-right: 30px;
+}
+.about-company .content .about-info .about-buttons .play-button {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  border: 1px solid black;
+}
+.about-company .content .about-info .about-buttons .play-button:hover {
+  background-color: #191919;
+  color: #dbd6d6;
+}
+
 .project-and-case .container .section-title {
   text-align: center;
 }
@@ -370,50 +491,5 @@ header .container .menu .login-btn {
   .project-and-case .container .projects-btn a {
     margin-top: 50px;
     margin-bottom: 90px;
-  }
-}
-
-.features {
-  display: flex;
-  margin-left: 40px;
-  justify-content: center;
-}
-@media (min-width: 1200px) {
-  .features {
-    margin-right: 50px;
-    padding: 70px;
-    width: 85%;
-    margin: auto;
-    border: 1px solid #D1D1D1;
-    gap: 90px;
-  }
-}
-.features .container {
-  margin-top: 90px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
-}
-.features .container .section-title {
-  display: grid;
-  grid-row: 1/3;
-  padding: 0;
-  margin-right: 100px;
-}
-.features .container .section-title h2 {
-  font-size: 45px;
-}
-.features .container .our-products {
-  display: none;
-}
-.features .container .our-products img {
-  margin-bottom: 20px;
-}
-.features .container .our-products p {
-  margin-top: 20px;
-}
-@media (min-width: 768px) {
-  .features .container .our-products {
-    display: block;
   }
 }
