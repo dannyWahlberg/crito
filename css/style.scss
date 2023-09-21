@@ -18,6 +18,14 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
+.bottom-border {
+
+    width: 40px;
+    height: auto;
+    border-bottom: 2px solid black;
+    margin-bottom: 40px;
+}
+
 .btn-yellow {
     background-color: #F9D783;
     border: 1px solid #F9D783;
@@ -105,6 +113,24 @@ body {
         background-color: #191919;
         color: rgb(236, 235, 235);
     }
+
+}
+
+.round-btn {
+
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: 1px solid black;
+
+    &:hover {
+
+        background-color: #191919;
+        color: #dbd6d6;
+        
+    }
+
 
 }
 
@@ -396,11 +422,11 @@ header {
 
 .features {
     display: flex;
-    margin-left: 40px;
+    // margin-left: 40px;
     justify-content: center;
 
     @media (min-width: 1200px) {
-        margin-right: 50px;
+        // margin-right: 50px;
         padding: 70px;
         width: 85%;
         margin: auto;
@@ -423,6 +449,7 @@ header {
 
             h2 {
                 font-size: 45px;
+                margin-bottom: 20px;
             }
 
 
@@ -462,11 +489,20 @@ header {
         display: flex;
         padding-top: 120px;
         justify-content: space-between;
-
+        margin-bottom: 120px;
         gap: 100px;
+        align-items: center;
+        
 
         .about-image {
             position: relative;
+            display: none;
+
+            @media (min-width: 1200px) {
+                display: block;
+            }
+
+
 
             .blue-box {
                 position: absolute;
@@ -529,13 +565,7 @@ header {
 
             .section-title {
 
-                padding: 0;
-
-                p {}
-
-                h2 {}
-
-
+                padding: 0; 
             }
 
             .content-text {
@@ -557,30 +587,132 @@ header {
 
                     margin-right: 30px;
                 }
+             }
+        }
+    }
+}
 
-                .play-button {
+.our-services {
 
-                    border-radius: 50%;
-                    height: 50px;
-                    width: 50px;
-                    background-color: transparent;
-                    border: 1px solid black;
+    position: relative;
+    background-color: #F0EFE9;
+    padding-bottom: 120px;
+
+    .content {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+
+        .section-title {
+
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            
+
+
+        }
+
+        .content-boxes {
+
+            // display: flex;
+            // gap: 20px;
+            // justify-content: center;
+            // flex-wrap: wrap;
+            // max-width: 1200px;
+            // width: 100%;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-rows: 1fr;
+            gap:20px;
+
+            @media (min-width: 1200px) {
+                flex-wrap: nowrap;
+            }
+
+            .box {
+                overflow: hidden;
+                word-wrap: break-word;
+                background-color: #FFFFFF;
+                padding:50px;
+                
+
+                .round-btn {
+                    background-color: #191919;
+                    color: #FFFFFF;
+                    margin-left: 180px;
+
+                    &:hover {
+
+                        background-color: #FFFFFF;
+                        color: #191919;
+                        
+                    }
+                }
+
+            }
+
+            .yellow {
+                background-color: #F9D783;
+
+                .round-btn {
+
+                    background-color: #FFFFFF;
+                    color: #191919;
 
                     &:hover {
 
                         background-color: #191919;
-                        color: #dbd6d6;
-                        // border: 1px solid #e3e0e0;
+                        color: #FFFFFF;
+                        
                     }
-
-
                 }
-
-
             }
         }
+
+        .btn-container{ 
+
+            padding-top: 50px;
+
+
+        .btn-black {
+
+            color: #191919;
+            background-color: transparent;
+
+            &:hover {
+
+                background-color: #191919;
+                color: #FFFFFF;
+            }
+            
+        }
+    }
+
+    .waves-image {
+
+        display: none;
+
+        @media (min-width: 1200px) {
+            display: block;
+        }
+            
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        
+        
+    }
     }
 }
+
+
 
 .project-and-case {
     .container {
