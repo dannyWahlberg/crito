@@ -250,6 +250,7 @@ header .container .menu .login-btn {
 
 .showcase {
   background-color: #F0EFE9;
+  position: relative;
 }
 .showcase .container {
   display: flex;
@@ -260,6 +261,7 @@ header .container .menu .login-btn {
   padding-top: 80px;
   padding-bottom: 40px;
   text-align: center;
+  margin-bottom: 80px;
 }
 @media (min-width: 1200px) {
   .showcase .container .content {
@@ -307,6 +309,11 @@ header .container .menu .login-btn {
   .showcase .container .content a {
     display: inline-block;
   }
+}
+.showcase .container .content .showcase-waves {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 .showcase .container img {
   display: none;
@@ -523,6 +530,19 @@ header .container .menu .login-btn {
   .our-services .content .waves-image {
     display: block;
   }
+}
+
+.why-choose-us .content {
+  display: flex;
+}
+.why-choose-us .content .text-content .our-knowledge .example-knowledge {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+}
+.why-choose-us .content .image-content {
+  margin-top: 90px;
 }
 
 .project-and-case .container .section-title {
