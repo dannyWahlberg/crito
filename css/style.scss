@@ -128,7 +128,7 @@ body {
 
         background-color: #191919;
         color: #dbd6d6;
-        
+
     }
 
 
@@ -310,19 +310,28 @@ header {
 .showcase {
     background-color: #F0EFE9;
     position: relative;
+    z-index: 0;
+
+    .showcase-waves {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+
+    }
 
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+
 
         .content {
             padding-top: 80px;
             padding-bottom: 40px;
             text-align: center;
             margin-bottom: 80px;
-            
+
 
             @media (min-width: 1200px) {
                 text-align: left;
@@ -380,12 +389,7 @@ header {
 
             }
 
-            .showcase-waves {
-                position:absolute;
-                left: 0;
-                bottom:0;
-                
-            }
+
 
 
         }
@@ -505,7 +509,7 @@ header {
         margin-bottom: 120px;
         gap: 100px;
         align-items: center;
-        
+
 
         .about-image {
             position: relative;
@@ -578,7 +582,7 @@ header {
 
             .section-title {
 
-                padding: 0; 
+                padding: 0;
             }
 
             .content-text {
@@ -600,7 +604,7 @@ header {
 
                     margin-right: 30px;
                 }
-             }
+            }
         }
     }
 }
@@ -610,14 +614,31 @@ header {
     position: relative;
     background-color: #F0EFE9;
     padding-bottom: 120px;
+    z-index: 0;
+
+    .waves-image {
+
+        display: none;
+        z-index: -1;
+
+        @media (min-width: 1200px) {
+            display: block;
+        }
+
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+
+    }
 
     .content {
-        
+
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
+
 
         .section-title {
 
@@ -626,7 +647,7 @@ header {
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
-            
+
 
 
         }
@@ -643,7 +664,7 @@ header {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             grid-template-rows: 1fr;
-            gap:20px;
+            gap: 20px;
 
             @media (min-width: 1200px) {
                 flex-wrap: nowrap;
@@ -653,8 +674,8 @@ header {
                 overflow: hidden;
                 word-wrap: break-word;
                 background-color: #FFFFFF;
-                padding:50px;
-                
+                padding: 50px;
+
 
                 .round-btn {
                     background-color: #191919;
@@ -665,7 +686,7 @@ header {
 
                         background-color: #FFFFFF;
                         color: #191919;
-                        
+
                     }
                 }
 
@@ -683,65 +704,52 @@ header {
 
                         background-color: #191919;
                         color: #FFFFFF;
-                        
+
                     }
                 }
             }
         }
 
-        .btn-container{ 
+        .btn-container {
 
             padding-top: 50px;
 
 
-        .btn-black {
+            .btn-black {
 
-            color: #191919;
-            background-color: transparent;
+                color: #191919;
+                background-color: transparent;
 
-            &:hover {
+                &:hover {
 
-                background-color: #191919;
-                color: #FFFFFF;
+                    background-color: #191919;
+                    color: #FFFFFF;
+                }
+
             }
-            
         }
-    }
 
-    .waves-image {
 
-        display: none;
-
-        @media (min-width: 1200px) {
-            display: block;
-        }
-            
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        
-        
-    }
     }
 }
 
 .why-choose-us {
 
     .content {
-        display:flex;
+        display: flex;
 
         .text-content {
 
             .our-knowledge {
 
-                
+
                 .example-knowledge {
 
                     display: grid;
                     align-items: center;
                     grid-template-columns: auto 1fr;
                     grid-template-rows: auto auto;
-                    
+
                 }
             }
         }
