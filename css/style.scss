@@ -328,7 +328,7 @@ header {
 
         .content {
             padding-top: 80px;
-            padding-bottom: 40px;
+            // padding-bottom: 40px;
             text-align: center;
             margin-bottom: 80px;
 
@@ -735,34 +735,101 @@ header {
 
 .why-choose-us {
 
-    .content {
+    position: relative;
+    z-index: 0;
+
+    .grey-box {
+
+            display: none;
+        
+        @media (min-width: 1200px) {
+            display: block;
+        }
+        position: absolute;
+        width: 60%;
+        height: 60%;
+        background-color: #F0EFE9;
+        z-index: -1;
+        right: 0;
+        bottom: 0;
+    }
+
+    .container {
+        
+
         display: flex;
+        margin-top: 60px;
+        justify-content: space-between;
 
         .text-content {
 
-            .our-knowledge {
+            a {
+                text-decoration: none;
+
+                :hover {
+
+                    h3 {
+                        text-decoration: underline;
+                    }
+                    
+                }
+            }
+
+            .examples {
+
+                display:flex;
+                align-items: center;
+                margin-top: 20px;
 
 
-                .example-knowledge {
+                img {
 
-                    display: grid;
-                    align-items: center;
-                    grid-template-columns: auto 1fr;
-                    grid-template-rows: auto auto;
+                    margin-right: 20px;
+                    
 
+                }
+
+                 h3 {
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 22px;
+                    color: #191919;
+                    
+                
+                }
+
+                p {
+                    font-family: 'Inter', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #9B9B9B;
                 }
             }
         }
 
-
         .image-content {
 
-            margin-top: 90px;
+            display: none;
+
+            @media (min-width: 1200px) {
+                display: block;
+            }
+
+            padding-top: 100px;
+
+            img {
+
+                margin-left: 100px;
+            }
+
         }
     }
+
 }
 
 .project-and-case {
+
+    margin-top: 120px;
     .container {
 
         .section-title {
