@@ -942,7 +942,10 @@ header {
 
         .photos {
 
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
+            
+            
             gap: 25px;
 
 
@@ -954,6 +957,7 @@ header {
                     font-size: 22px;
                     font-weight: 700;
                     margin: 0;
+                    flex: 1;
 
 
                 }
@@ -980,14 +984,46 @@ header {
 
     .testimonial {
 
+
+        width: 100%;
+
+
+        @media (min-width:576px) {
+
+            max-width: 576px;
+
+        }
+
+        @media (min-width:768px) {
+
+            max-width: 768px;
+
+        }
+
+        @media (min-width: 992px) {
+
+            max-width: 992px;
+        }
+
+        @media (min-width: 1200px) {
+
+            max-width: 1200px;
+        }
+
+        @media (min-width: 1400px) {
+
+            max-width: 1400px;
+        }
+
         background-color: #ffffff;
         display: flex;
         flex-direction: column;
         padding: 0 50px;
         align-items: center;
-        margin: 0 50px;
+        margin: 0 auto;
         margin-bottom: 120px;
         margin-top: 60px;
+
 
         .section-title {
             display: flex;
@@ -999,10 +1035,10 @@ header {
 
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            
+
 
             // display: flex;
-            
+
 
             .testimonial-box {
 
@@ -1022,8 +1058,8 @@ header {
                 .person {
                     display: flex;
                     align-items: center;
-                    
-                    img{
+
+                    img {
                         margin-right: 10px;
                     }
 
@@ -1048,5 +1084,43 @@ header {
         }
     }
 
+
+}
+
+.article-and-news {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        padding-top: 100px;
+
+        .top-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .section-title {
+
+                padding-top: 0px;
+            }
+
+            .btn-transparent {}
+
+        }
+
+        .content {
+
+            display: flex;
+
+            .article-box {}
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 80px;
+        }
+    }
 
 }
