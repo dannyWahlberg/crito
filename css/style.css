@@ -691,6 +691,7 @@ header .container .menu .login-btn {
   font-weight: 700;
   margin: 0;
   flex: 1;
+  height: auto;
 }
 .meet-our-team .content .photos .photo-container .title {
   color: #554D37;
@@ -796,6 +797,64 @@ header .container .menu .login-btn {
   display: flex;
   justify-content: center;
   margin-top: 80px;
+}
+
+.signup {
+  background-color: #F0EFE9;
+  margin-top: 80px;
+  position: relative;
+  z-index: 0;
+}
+.signup .submit-waves {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  bottom: 50px;
+}
+.signup .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+.signup .content h2 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+}
+.signup .content .signup-form {
+  display: flex;
+  gap: 30px;
+}
+.signup .content .signup-form .signup-box {
+  padding: 10px 50px;
+  border-radius: 50px;
+  border: none;
+}
+.signup .content .signup-form .submit-btn {
+  background-color: #F9D783;
+  border: 1px solid #F9D783;
+  color: #191919;
+  text-decoration: none;
+  padding: 15px 60px;
+  border-radius: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  transition: background-color 0.5s ease;
+}
+.signup .content .signup-form .submit-btn i {
+  margin-left: 8px;
+  font-size: 0.8em;
+  vertical-align: middle;
+  position: relative;
+  top: -5px;
+}
+.signup .content .signup-form .submit-btn:hover {
+  background-color: #191919;
+  color: rgb(241, 237, 237);
+  border: 1px solid #191919;
 }
 
 footer {
