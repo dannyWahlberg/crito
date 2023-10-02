@@ -363,7 +363,8 @@ header .container .menu .login-btn {
   display: grid;
   grid-row: 1/3;
   padding: 0;
-  margin-right: 100px;
+  padding-bottom: 200px;
+  margin-right: 20px;
 }
 .features .container .section-title h2 {
   font-size: 45px;
@@ -371,6 +372,7 @@ header .container .menu .login-btn {
 }
 .features .container .our-products {
   display: none;
+  margin-left: 150px;
 }
 .features .container .our-products img {
   margin-bottom: 20px;
@@ -439,6 +441,7 @@ header .container .menu .login-btn {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-left: 100px;
 }
 .about-company .content .about-info .section-title {
   padding: 0;
@@ -454,6 +457,8 @@ header .container .menu .login-btn {
 }
 .about-company .content .about-info .about-buttons .btn-black {
   margin-right: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .our-services {

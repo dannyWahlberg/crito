@@ -465,7 +465,8 @@ header {
             display: grid;
             grid-row: 1 / 3;
             padding: 0;
-            margin-right: 100px;
+            padding-bottom: 200px;
+            margin-right: 20px;
 
             h2 {
                 font-size: 45px;
@@ -478,6 +479,7 @@ header {
         .our-products {
 
             display: none;
+            margin-left: 150px;
 
             //    margin-right: 150px;
 
@@ -581,6 +583,7 @@ header {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
+            margin-left: 100px;
 
 
             .section-title {
@@ -606,6 +609,8 @@ header {
                 .btn-black {
 
                     margin-right: 30px;
+                    padding-left: 50px;
+                    padding-right: 50px;
                 }
             }
         }
