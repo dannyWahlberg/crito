@@ -71,6 +71,30 @@ body {
   border: 1px solid #191919;
 }
 
+.submit-btn {
+  background-color: #F9D783;
+  border: 1px solid #F9D783;
+  color: #191919;
+  text-decoration: none;
+  padding: 15px 60px;
+  border-radius: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  transition: background-color 0.5s ease;
+}
+.submit-btn i {
+  margin-left: 8px;
+  font-size: 0.8em;
+  vertical-align: middle;
+  position: relative;
+  top: -5px;
+}
+.submit-btn:hover, .submit-btn:focus {
+  background-color: #191919;
+  color: rgb(241, 237, 237);
+  border: 1px solid #191919;
+}
+
 .btn-transparent {
   background-color: transparent;
   border: 1px solid #191919;
@@ -684,6 +708,9 @@ header .container .menu .login-btn {
 }
 .meet-our-team .content .small-header .btn-yellow {
   border: 1px solid #191919;
+  margin-top: 70px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .meet-our-team .content .photos {
   display: grid;
@@ -746,6 +773,7 @@ header .container .menu .login-btn {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 70px;
 }
 .meet-our-team .testimonial .client-testimonials {
   display: grid;
@@ -838,29 +866,6 @@ header .container .menu .login-btn {
   border-radius: 50px;
   border: none;
 }
-.signup .content .signup-form .submit-btn {
-  background-color: #F9D783;
-  border: 1px solid #F9D783;
-  color: #191919;
-  text-decoration: none;
-  padding: 15px 60px;
-  border-radius: 50px;
-  font-weight: 400;
-  font-size: 16px;
-  transition: background-color 0.5s ease;
-}
-.signup .content .signup-form .submit-btn i {
-  margin-left: 8px;
-  font-size: 0.8em;
-  vertical-align: middle;
-  position: relative;
-  top: -5px;
-}
-.signup .content .signup-form .submit-btn:hover {
-  background-color: #191919;
-  color: rgb(241, 237, 237);
-  border: 1px solid #191919;
-}
 
 footer {
   background-color: #0E1021;
@@ -950,4 +955,87 @@ footer .bottom .bottom-section .socialmedia-bar a {
 }
 footer .bottom .bottom-section .socialmedia-bar a:hover {
   color: #7c7c7c;
+}
+
+.showcase-contact {
+  background-color: #F0EFE9;
+}
+.showcase-contact .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+}
+.showcase-contact .content nav a {
+  font-weight: 300;
+  text-decoration: none;
+  color: #191919;
+  margin-left: 20px;
+}
+.showcase-contact .content nav a:hover {
+  text-decoration: underline;
+}
+.showcase-contact .content nav a.active {
+  font-weight: 500;
+}
+.showcase-contact .content h1 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 56px;
+}
+
+.contact-us-content {
+  margin-top: 80px;
+}
+.contact-us-content .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "box-one box-two box-three" "big-box big-box big-box";
+  gap: 20px;
+}
+.contact-us-content .container .information-box {
+  margin-bottom: 20px;
+}
+.contact-us-content .container .information-box.one {
+  grid-area: box-one;
+}
+.contact-us-content .container .information-box.two {
+  grid-area: box-two;
+}
+.contact-us-content .container .information-box.three {
+  grid-area: box-three;
+}
+.contact-us-content .container .big-contact-box {
+  grid-area: big-box;
+  background-color: #F0EFE9;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-us-content .container .big-contact-box .contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.contact-us-content .container .big-contact-box .contact-form input {
+  border-radius: 50px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+}
+.contact-us-content .container .big-contact-box .contact-form textarea {
+  border-radius: 25px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: none;
+}
+.contact-us-content .container .big-contact-box .contact-form input:focus, .contact-us-content .container .big-contact-box .contact-form textarea:focus {
+  outline: none;
+}
+.contact-us-content .container .big-contact-box .contact-form input:focus, .contact-us-content .container .big-contact-box .contact-form textarea:focus {
+  border: 1px solid #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }

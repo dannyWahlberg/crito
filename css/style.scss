@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap');
 
+
+
 html,
 body {
     color: #191919;
@@ -8,6 +10,8 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
+
+
 }
 
 .wrapper-grid {
@@ -80,6 +84,36 @@ body {
 
         background-color: #FFFFFF;
         color: #191919;
+        border: 1px solid #191919;
+    }
+
+}
+
+.submit-btn {
+
+    background-color: #F9D783;
+    border: 1px solid #F9D783;
+    color: #191919;
+    text-decoration: none;
+    padding: 15px 60px;
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    transition: background-color 0.5s ease;
+
+
+    i {
+        margin-left: 8px;
+        font-size: 0.8em;
+        vertical-align: middle;
+        position: relative;
+        top: -5px;
+    }
+
+    &:hover, &:focus {
+
+        background-color: #191919;
+        color: rgb(241, 237, 237);
         border: 1px solid #191919;
     }
 
@@ -943,6 +977,9 @@ header {
             .btn-yellow {
 
                 border: 1px solid #191919;
+                margin-top: 70px;
+                padding-left: 50px;
+                padding-right: 50px;
 
             }
 
@@ -1039,6 +1076,7 @@ header {
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-top: 70px;
         }
 
         .client-testimonials {
@@ -1181,35 +1219,7 @@ header {
 
             }
 
-            .submit-btn {
 
-                background-color: #F9D783;
-                border: 1px solid #F9D783;
-                color: #191919;
-                text-decoration: none;
-                padding: 15px 60px;
-                border-radius: 50px;
-                font-weight: 400;
-                font-size: 16px;
-                transition: background-color 0.5s ease;
-            
-            
-                i {
-                    margin-left: 8px;
-                    font-size: 0.8em;
-                    vertical-align: middle;
-                    position: relative;
-                    top: -5px;
-                }
-            
-                &:hover {
-            
-                    background-color: #191919;
-                    color: rgb(241, 237, 237);
-                    border: 1px solid #191919;
-                }
-
-            }
         }
 
     }
@@ -1362,4 +1372,144 @@ footer {
 
         }
     }
+}
+
+
+// Contact.html Starts here
+
+.showcase-contact {
+
+    background-color: #F0EFE9;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 80px;
+
+
+        nav {
+            a {
+                font-weight: 300;
+                text-decoration: none;
+                color: #191919;
+                margin-left: 20px;
+
+                &:hover {
+
+                    text-decoration: underline;
+                }
+
+                &.active {
+                    font-weight: 500;
+                }
+            }
+        }
+
+        h1 {
+            
+            font-family: 'DM Sans', sans-serif;
+            font-size: 56px;
+
+        }
+    }
+}
+
+
+.contact-us-content {
+
+    margin-top: 80px;
+
+.container {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "box-one box-two box-three"
+                         "big-box big-box big-box";
+
+    
+    gap: 20px;
+
+
+
+    .information-box {
+
+        margin-bottom: 20px;
+
+
+        &.one {
+
+            grid-area: box-one;
+       
+ 
+            
+        }
+        &.two {
+
+            grid-area: box-two;
+
+        }
+        &.three {
+
+            grid-area: box-three;
+
+        }
+
+    }
+
+    .big-contact-box {
+
+        grid-area: big-box;
+        background-color: #F0EFE9;
+        padding:80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+       
+
+        .contact-form {
+
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+
+
+            input {
+                border-radius: 50px;
+                margin-bottom: 20px;
+                padding-left: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border: none;
+            }
+
+            textarea {
+                border-radius: 25px;
+                padding:20px;
+                margin-bottom: 20px;
+                border: none;
+            }
+
+            input:focus, textarea:focus {
+                outline: none;
+            }
+            
+            
+            input:focus, textarea:focus {
+                border: 1px solid #007bff; 
+                box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+            }
+         }
+        
+        }
+
+
+
+}
+
+
+
+
 }
