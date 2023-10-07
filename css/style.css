@@ -826,6 +826,10 @@ header .container .menu .login-btn {
 .article-and-news .container .content {
   display: flex;
 }
+.article-and-news .container .content .article-box a {
+  text-decoration: none;
+  color: #191919;
+}
 .article-and-news .container .btn-container {
   display: flex;
   justify-content: center;
@@ -994,7 +998,22 @@ footer .bottom .bottom-section .socialmedia-bar a:hover {
   gap: 20px;
 }
 .contact-us-content .container .information-box {
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.contact-us-content .container .information-box .text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.contact-us-content .container .information-box .text img {
+  flex: 1;
+}
+.contact-us-content .container .information-box .text p {
+  flex: 2;
+  margin: 0;
 }
 .contact-us-content .container .information-box.one {
   grid-area: box-one;
@@ -1012,6 +1031,7 @@ footer .bottom .bottom-section .socialmedia-bar a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 100px;
 }
 .contact-us-content .container .big-contact-box .contact-form {
   display: flex;
@@ -1038,4 +1058,10 @@ footer .bottom .bottom-section .socialmedia-bar a:hover {
 .contact-us-content .container .big-contact-box .contact-form input:focus, .contact-us-content .container .big-contact-box .contact-form textarea:focus {
   border: 1px solid #007bff;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.contact-us-content .map-location img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
